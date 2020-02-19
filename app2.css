@@ -1,0 +1,26 @@
+html, body {
+    margin: 0;
+}
+
+.app {
+    width: 100vw;
+    height: 100vh;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+.question_box { 
+    display: flex; 
+    flex-direction: column;
+    border: 2px solid black; 
+    padding: 25px;
+    align-items: center;
+    justify-content: center; 
+}
+
+.header_q { 
+    font-size: 30px;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
