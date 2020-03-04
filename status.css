@@ -1,0 +1,17 @@
+#statusbar {
+    position: absolute; 
+    bottom: 0; 
+    height: 5vh; 
+    width: 100vw; 
+    border: 2px solid black; 
+    background-color: lightgreen;
+    align-items: center;
+    justify-content: center;
+    display: flex; 
+}
+
+#status_text { 
+   position: relative;
+   align-items: center;
+   justify-content: center;
+}

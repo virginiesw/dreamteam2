@@ -5,18 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Question</title>
     <link href="app2.css" rel="stylesheet">
+    <link href="healthbar.css" rel="stylesheet"> 
+    <link href="status.css" rel="stylesheet"> 
+    <script src="healthbar.js"></script> 
 </head>
 <body>
     <div class="app">
+        <div id="healthbaroutline" onclick="changeHealth()">
+            <div class="healthbar" onclick="changeHealth()"></div>
+        </div>
         <div class="question_box">
             <span class="header_q">What comes after A?</span>
             <div>
-                <input class="header_i" placeholder="Type your answer here..."></input>
+                <input class="header_i" placeholder="Type your answer here..." onkeyup="ChangeState()"></input>
                 <button onclick="CheckAnswer()" class="header_b">Check Answer</button>
             </div>
             <div id="header_r"></div>
         </div>
     </div>
+            <div id="statusbar">
+                <h1 id="status_text">Good</h1>
+            </div>
     <script src="jordan.js"></script>
+    <script src="status.js"></script>
 </body>
 </html>

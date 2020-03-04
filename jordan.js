@@ -49,6 +49,8 @@ console.log(data);
         document.body.style.backgroundColor = data.questions[data.qnum].bgcolor;
         document.querySelector("#header_r").innerHTML = "<img src=' "+data.questions[data.qnum].img+"'/>"; 
 
+        audiodos.play();
+        Correct(); 
         // //changing the question to the next question
         // if(qnum === 1) {
         // qnum++;
@@ -60,7 +62,11 @@ console.log(data);
         //     answer = "Yellow";
         // }
     } else { 
-        document.querySelector("#header_r").innerHTML = "<h1>WRONG!</h1>"; 
+        document.querySelector("#header_r").innerHTML = "<h1>WRONG!</h1>";
+        changeHealth();  
+        var audio = new Audio('minecraft.mp3');
+audio.play();
+Incorrect(); 
     }
 }
 
